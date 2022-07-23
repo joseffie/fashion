@@ -1,0 +1,26 @@
+include ../blog-card/blog-card.pug
+
+section.main-content
+  h2.h2-title.h2-title--aside.main-content__title-mobile
+    | Recent posts
+  .main-content__blog
+    +blog-card('Tourism', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic1.jpg', 'Tourism')
+    +blog-card('Sport', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic2.png', 'Sport')
+    +blog-card('Fashion', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic3.png', 'Fashion')
+    +blog-card('Clothes', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic4.png', 'Clothes')
+    +blog-card('Clothes', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic5.png', 'Clothes')
+    +blog-card('Fashion', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic6.png', 'Fashion')
+    +blog-card('Summer', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic7-wide.jpg', 'Summer', 'wide', true, 6)
+      p.text.blog-card__descr
+        | Lorem ipsum dolor sit amet consectetur adipisicing
+        | elit. Aut ipsa sint sed doloremque quisquam impedit
+        | voluptas natus? Vero enim praesentium nam vitae
+        | quia. Cum repudiandae eveniet nihil provident
+        | impedit, dignissimos quidem ad labore quod!
+        | Inventore, velit.
+    +blog-card('Autumn', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic8.png', 'Autumn')
+    +blog-card('Clothes', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic9.png', 'Clothes')
+    +blog-card('Summer', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic10.png', 'Summer')
+    +blog-card('Summer', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'blog-pics/pic11.png', 'Summer')
+
+  include ../pagination/pagination.pug

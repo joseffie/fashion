@@ -1,0 +1,62 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: rem(100);
+  padding-bottom: rem(50);
+  background: fixed $gray-400 url('../img/hero-bg.png') center center / cover no-repeat;
+  @include adaptive-value('margin-bottom', 60, 40);
+
+  @media (max-height: $breakpoint400) {
+    padding-bottom: rem(20);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: start;
+    justify-content: end;
+  }
+
+  &__header {
+    color: $white;
+  }
+
+  &__title {
+    margin: rem(5) 0 rem(10) 0;
+
+    @media (max-width: $breakpoint560) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(15);
+    align-items: center;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    @include adaptive-font(14, 12);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      @include hover {
+        color: $color-main;
+      }
+    }
+
+    span {
+      color: $gray-700;
+    }
+  }
+}

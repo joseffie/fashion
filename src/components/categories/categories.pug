@@ -1,0 +1,13 @@
+mixin category(name, amount, href='#')
+  li.categories__item
+    a.categories__item-row(href=href)
+      h5.h5-title.categories__name= name
+      span.categories__amount
+        | (#{amount})
+
+ul.categories
+  +category('Fashion', 23)
+  +category('Style & clothes', 7)
+  +category('Minimalism', 16)
+  +category('Black & White', 5)
+  +category('Modern clothes', 12)

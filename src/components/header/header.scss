@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: rem(30) 0px;
+  background-color: $white;
+  box-shadow: 0 1px 10px rgba($gray-100, 0.55);
+
+  @media (max-width: $breakpoint640) {
+    padding: rem(15) 0;
+  }
+
+  &__row {
+    display: flex;
+    gap: rem(15);
+    align-items: center;
+    justify-content: space-between;
+  }
+}

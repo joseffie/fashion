@@ -1,0 +1,11 @@
+include ../burger/burger.pug
+include ../main-nav/main-nav.pug
+
+header.header
+  .container
+    .header__row
+      include ../logo/logo.pug
+
+      +burger()
+
+      +navMenu()

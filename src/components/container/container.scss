@@ -1,0 +1,23 @@
+.container {
+  width: $container-width;
+  margin: 0px auto;
+  padding: 0px $container-offset;
+
+  // In case the container is larger than 1440px in the layout
+  @media (max-width: $container-width) {
+    width: 1023.98px;
+  }
+
+  @media (max-width: $breakpoint1024) {
+    width: 766.98px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    width: 100%;
+  }
+
+  &--fluid {
+    width: 100%;
+    padding: 0px $container-offset;
+  }
+}

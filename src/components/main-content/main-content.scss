@@ -1,0 +1,38 @@
+.main-content {
+  grid-column: 8 span;
+  @include adaptive-value('padding-right', 75, 20);
+
+  @media (max-width: $breakpoint1024) {
+    grid-column: 12 span;
+    order: 2;
+    padding-right: 0;
+  }
+
+  .blog-card--wide {
+    grid-column: 2 span;
+
+    @media (max-width: $breakpoint480) {
+      grid-column: 1 span;
+    }
+  }
+
+  &__title-mobile {
+    display: none;
+
+    @media (max-width: $breakpoint1024) {
+      display: block;
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(30);
+    @include adaptive-value('margin-bottom', 60, 40);
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

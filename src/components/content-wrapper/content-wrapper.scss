@@ -1,0 +1,13 @@
+.content-wrapper {
+  @include adaptive-value('margin-bottom', 80, 50);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    @include adaptive-value('row-gap', 130, 20);
+
+    > * {
+      max-width: 100%;
+    }
+  }
+}

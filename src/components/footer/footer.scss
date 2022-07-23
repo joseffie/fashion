@@ -1,0 +1,121 @@
+.footer {
+  &__logo-wrap {
+    display: flex;
+    justify-content: center;
+    @include adaptive-value('margin-bottom', 60, 30);
+  }
+
+  &__logo {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    @include hover {
+      opacity: 0.8;
+    }
+
+    svg {
+      width: rem(120);
+      height: rem(32);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(30);
+    @include adaptive-value('gap', 25, 15);
+  }
+
+  &__link {
+    padding: rem(5) rem(3);
+    color: $gray-400;
+    font-family: $font-family-secondary;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0 0 0 / 0%);
+    transition: border-bottom-color 0.4s ease, color 0.4s ease;
+
+    @include hover {
+      color: $color-main;
+      border-bottom-color: inherit;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(20);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    @include adaptive-value('margin-bottom', 40, 30);
+  }
+
+  &__social {
+    line-height: 1;
+
+    @include hover {
+      .footer__social-bg {
+        fill: $color-main;
+      }
+
+      .footer__social-logo {
+        fill: $white;
+      }
+    }
+
+    @media (max-width: $breakpoint400) {
+      display: flex;
+      flex: 0 1 25%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    svg {
+      min-width: rem(34);
+      height: rem(34);
+
+      @media (max-width: $breakpoint480) {
+        min-width: rem(42);
+        height: rem(42);
+      }
+    }
+  }
+
+  &__social-bg {
+    fill: rgb(0 0 0 / 0%);
+  }
+
+  &__social-logo {
+    color: inherit;
+    fill: $gray-400;
+  }
+
+  &__social-bg,
+  &__social-logo {
+    transition: fill 0.3s ease;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid $gray-900;
+    @include adaptive-value('padding-top', 30, 15);
+    @include adaptive-value('padding-bottom', 30, 15);
+  }
+
+  &__copyright-text {
+    margin: 0;
+    cursor: default;
+  }
+}

@@ -1,0 +1,37 @@
+include ../blog-card/blog-card.pug
+
+aside.aside
+  .aside__section
+    h2.h2-title.h2-title--aside.aside__title About the author
+    .aside__author-card.author-card
+      img.author-card__pic(src='@img/aside/about.jpg', loadin='lazy', alt='Kate Willems')
+      .author-card__body
+        .author-card__body-content
+          .author-card__header
+            h3.h3-title.author-card__name Kate Willems
+            h5.h5-title.author-card__job-title
+              | Food & cooking bloger
+          p.text.author-card__descr
+            | Hi, I'm Sonia. Cooking is the way I express
+            | my creative side to the world. Welcome to
+            | my Kitchen Corner on…
+        a.author-card__continue(href='#')
+          | Continue reading
+  .aside__section
+    h2.h2-title.h2-title--aside.aside__title Featured posts
+    ul.aside__featured-list
+      li
+        +blog-card('Jeans', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'aside/featured/pic1.jpg', 'Jeans')
+      li
+        +blog-card('City', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'aside/featured/pic2.png', 'City')
+      li
+        +blog-card('Photography', 'One of Saturn&#8217;s largest rings may be newer than anyone', 'June 6, 2019', 'Rickie Baroch', 'aside/featured/pic3.png', 'Photography')
+  .aside__section
+    h2.h2-title.h2-title--aside.aside__title Categories
+    include ../categories/categories.pug
+  .aside__section
+    h2.h2-title.h2-title--aside.aside__title Social media
+    include ../aside-media/aside-media.pug
+  .aside__section
+    h2.h2-title.h2-title--aside.aside__title Tags
+    include ../aside-tags/aside-tags.pug

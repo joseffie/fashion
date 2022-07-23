@@ -1,0 +1,46 @@
+.categories {
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    border-bottom: 1px solid $gray-900;
+    @include adaptive-value('padding-top', 15, 10);
+    @include adaptive-value('padding-bottom', 15, 10);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__item-row {
+    display: flex;
+    gap: rem(10);
+    align-items: center;
+    justify-content: space-between;
+    color: $gray-400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    * {
+      color: inherit;
+      user-select: none;
+    }
+
+    @include hover {
+      color: $color-main;
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    @include adaptive-font(16, 12);
+  }
+
+  &__amount {
+    @include adaptive-font(16, 12);
+  }
+}

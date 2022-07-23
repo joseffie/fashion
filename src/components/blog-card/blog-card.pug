@@ -1,0 +1,43 @@
+mixin blog-card(label, title, date, author, imgPath, imgAlt, mods, comments, commentsNum)
+  -
+    var allMods = '';
+    if (typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' blog-card--' + modsList[i].trim();
+      }
+    }
+
+  if (comments === true)
+    .blog-card(class= allMods)
+      a.blog-card__pic(href='#')
+        img(src='@img/' + imgPath, loading='lazy', alt=imgAlt)/
+      .blog-card__body
+        h4.h4-title.blog-card__label
+          a(href='#')!= label
+        h3.h3-title.blog-card__title
+          a(href='#')!= title
+        ul.blog-card__meta
+          li.blog-card__item!= date
+          li.blog-card__item
+            | <span>By</span> #{author}
+          li.blog-card__item
+            a(href='#')
+              | #{commentsNum} comments
+
+        block
+  else
+    .blog-card(class= allMods)
+      a.blog-card__pic(href='#')
+        img(src='@img/' + imgPath, alt=imgAlt)/
+      .blog-card__body
+        h4.h4-title.blog-card__label
+          a(href='#')!= label
+        h3.h3-title.blog-card__title
+          a(href='#')!= title
+        ul.blog-card__meta
+          li.blog-card__item!= date
+          li.blog-card__item
+            | <span>By</span> #{author}
+
+        block

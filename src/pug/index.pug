@@ -1,0 +1,17 @@
+extends ../base/pug/base.pug
+
+append variables
+  -
+    var title = 'Main'
+
+block content
+  include ../components/hero/hero.pug
+
+  .content-wrapper
+    .container
+      .content-wrapper__inner
+        include ../components/main-content/main-content.pug
+
+        include ../components/aside/aside.pug
+
+  include ../components/gallery/gallery.pug

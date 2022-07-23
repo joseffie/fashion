@@ -1,0 +1,24 @@
+{
+  "mainmenuData": [
+    {
+      "text": "Home",
+      "link": "/"
+    },
+    {
+      "text": "Recipes",
+      "link": "#"
+    },
+    {
+      "text": "Article",
+      "link": "#"
+    },
+    {
+      "text": "Contact",
+      "link": "#"
+    },
+    {
+      "text": "Purchase",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-weight: 400;
+  font-family: HKGrotesk;
+  font-style: normal;
+  src: url('../fonts/HKGrotesk-Regular.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Regular.woff') format('woff'),
+    url('../fonts/HKGrotesk-Regular.ttf') format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-weight: 400;
+  font-family: PTSans;
+  font-style: normal;
+  src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+    url('../fonts/PTSans-Regular.woff') format('woff'),
+    url('../fonts/PTSans-Regular.ttf') format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-weight: 700;
+  font-family: PTSerif;
+  font-style: normal;
+  src: url('../fonts/PTSerif-Bold.woff2') format('woff2'),
+    url('../fonts/PTSerif-Bold.woff') format('woff'), url('../fonts/PTSerif-Bold.ttf') format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-weight: 400;
+  font-family: PTSerif;
+  font-style: italic;
+  src: url('../fonts/PTSerif-Italic.woff2') format('woff2'),
+    url('../fonts/PTSerif-Italic.woff') format('woff'),
+    url('../fonts/PTSerif-Italic.ttf') format('ttf');
+  font-display: swap;
+}
+@font-face {
+  font-weight: 400;
+  font-family: PTSerif;
+  font-style: normal;
+  src: url('../fonts/PTSerif-Regular.woff2') format('woff2'),
+    url('../fonts/PTSerif-Regular.woff') format('woff'),
+    url('../fonts/PTSerif-Regular.ttf') format('ttf');
+  font-display: swap;
+}
